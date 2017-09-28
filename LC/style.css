@@ -1,0 +1,68 @@
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+h1, h2{
+    text-align: center;
+    font-family: 'Homemade Apple', cursive;
+    
+}
+h1:hover{
+    color: black;
+    filter: invert(100%);
+}
+body {
+    background: #F34165;
+    color: #628A61;
+}
+img{
+    width: 100%;
+}
+/*Old formatting*/
+
+
+/*
+background: linear-gradient(pink, #F34165);
+img.mainimage {
+    border: 3px solid gold;
+    width: 33%;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+img.mainimage:hover{
+    filter: url(filters.svg#grayscale);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    
+}
+img.album {
+    max-height: 200px;
+    width: auto;
+    border: 3px solid #FF0055;
+}
+img.album:hover{
+    filter: invert(100%);
+    transform: rotate(20deg);
+}
+.albums{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+#morebutton {
+    background-color:
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+*/
+
