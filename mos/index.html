@@ -12,6 +12,27 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    
+    <nav id="px-vh" class="navbar navbar-toggleable-lg fixed-top theme-color">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </button> 
+        <a class="navbar-brand theme-color " href="index.html">Miracle of Sound</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link theme-color " href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link theme-color " href="author.html">Author</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link theme-color " href="fan.html">Fan Page</a>
+                </li>
+            </ul>
+        </div> 
+          </nav>
     <div class="header">
         <h1>Miracle of Sound</h1>
         <h4>Gavin Dunne</h4>
@@ -65,7 +86,7 @@
 
     
 
-    <div class="right start-hidden" name="Albums">
+    <div class="right " name="Albums">
         <div class="album">
             <!-- <div class="overlay">-
                 <img class=" overlay-i" src="http://pluspng.com/img-png/play-button-png-play-video-button-png-321.png">
@@ -364,18 +385,18 @@
         
     </div>
     
-    <div class="right start-hidden" name="Comments">
+    <div class="right " name="Comments">
         <h3>Comments:</h3>
         <div id="comments-list">
             <!-- Comments added through Javascript -->
         </div>
         <div class="new-comment" > 
-            <form >
+            <form class="submit">
                 <label for="textarea">Add Comment:</label>
                 <textarea id="textarea" class="text" rows="6" cols="50"></textarea>
                 <h5 class="bottom-right"><span id="count">0</span>/254</h5>
-                <input type="submit" class="submit">
-                <button class="clear">Clear</button>
+                <button>Submit</button>
+                <button type="button" class="clear">Clear</button>
             </form>
         </div>
     </div>
