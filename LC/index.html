@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Head -->
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./style.css">
@@ -16,6 +18,7 @@
 </head>
 
 <body>
+    <!-- Navigation Bar -->
     <nav class="navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -23,24 +26,26 @@
             </div>
             <ul class="nav navbar-nav ">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="">Author Bio</a></li>
-                <li><a href="">Music Videos</a></li>
+                <li><a href="bio.html">Author Bio</a></li>
+                <li><a href="mv.html">Music Videos</a></li>
             </ul>
     </nav>
     </div>
+    <!-- Main Container -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-sm-12">
                 <h1>Los Campesinos!</h1>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-8 col-centered">
-                <img src="./images/DOOMED.jpg" alt="The band">
+                <img class="img-responsive rounded mainimage" src="./images/DOOMED.jpg" alt="The band">
             </div>
-            <div class="col-xs-12 col-sm-12 cold-md-8 col-centered">
+            <div class="col-xs-12 col-sm-12 cold-md-8">
                 <h2 class="col-centered">Biography</h2>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-center">
-                <p class="col-center">Los Campesinos! are a seven piece indie pop band from Cardiff, Wales, formed in early 2006 at Cardiff University.
+            <!-- Band Biography -->
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 bg-white rounded col-center bio-main">
+                <p>Los Campesinos! are a seven piece indie pop band from Cardiff, Wales, formed in early 2006 at Cardiff University.
                     Though the band formed in Wales, none of the members are Welsh. The band has gone through several lineup
                     changes during their career, with their current lineup consisting of Gareth Campesinos! (lead vocals,
                     lyrics), Neil Campesinos! (guitar), Tom Campesinos! (guitar), Rob Campesinos! (guitar, other instruments),
@@ -48,37 +53,105 @@
                     and Tom are the only remaining original members still in the band.</p>
                 <p>The band released their debut album, Hold on Now, Youngster..., in February 2008 and followed this up by
                     releasing a record titled We Are Beautiful, We Are Doomed, in October that year. The band had previously
-                    referred to this release as a 'record' or an 'extended EP', before ultimately deciding to refer to
-                    it as their second album out of simplicity. Their third album, entitled Romance Is Boring, was released
+                    referred to this release as a 'record' or an 'extended EP', before ultimately deciding to refer to it
+                    as their second album out of simplicity. Their third album, entitled Romance Is Boring, was released
                     on 1 February 2010. Their fourth full-length release, Hello Sadness, was released on 14 November 2011.
                     The band’s fifth album, No Blues, was released on 29 October 2013. Their sixth, Sick Scenes, was released
                     on 24 February 2017.</p>
+            </div>
+
+
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                <h2>Albums</h2>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="container-overlay">
+                    <img src="images/hellosadness.jpg" alt="Hello Sadness" class="img-responsive">
+                    <div class="overlay">
+                        <div class="overlay-text">Hello Sadness</div>
+                    </div>
+                </div>
+                <iframe class="spotify" src="https://open.spotify.com/embed?uri=spotify:album:4lKas0e5ILGltwQKtoizjD" width="100%" height="300px"
+                    frameborder="0" allowtransparency="true"></iframe>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+                <div class="container-overlay">
+                    <img src="images/hony.jpg" alt="Hold On Now, Youngster..." class="img-responsive">
+                    <div class="overlay">
+                        <div class="overlay-text">Hold On Now, Youngster...</div>
+                    </div>
+                </div>
+                <iframe class="spotify" src="https://open.spotify.com/embed?uri=spotify:album:3yUKAFyJjj6tsJjeUG5DAj" width="100%" height="300"
+                    frameborder="0" allowtransparency="true"></iframe>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="container-overlay">
+                    <img src="images/noblues.jpg" alt="No Blues" class="img-responsive">
+                    <div class="overlay">
+                        <div class="overlay-text">No Blues</div>
+                    </div>
+                </div>
+                <iframe class="spotify" src="https://open.spotify.com/embed?uri=spotify:album:2GuoCbVFrNWQHkn8XaDeTJ" width="100%" height="300px"
+                    frameborder="0" allowtransparency="true"></iframe>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="container-overlay">
+                    <img src="images/rib.jpg" alt="Romance is Boring" class="img-responsive">
+                    <div class="overlay">
+                        <div class="overlay-text">Romance is Boring</div>
+                    </div>
+                </div>
+                <iframe class="spotify" src="https://open.spotify.com/embed?uri=spotify:album:2Ps6ZsTecFnrufq5xsVxKf" width="100%" height="300"
+                    frameborder="0" allowtransparency="true"></iframe>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="container-overlay">
+                    <img src="images/sickscenes.jpg" alt="Sick Scenes" class="img-responsive">
+                    <div class="overlay">
+                        <div class="overlay-text">Sick Scenes</div>
+                    </div>
+                </div>
+                <iframe class="spotify" src="https://open.spotify.com/embed?uri=spotify:album:3E0ue8V97oLaYt5NyGTZfu" width="100%" height="300px"
+                    frameborder="0" allowtransparency="true"></iframe>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="container-overlay">
+                    <img src="images/wabwad.jpg" alt="" class="img-responsive">
+                    <div class="overlay">
+                        <div class="overlay-text">We Are Beautiful, We Are Doomed</div>
+                    </div>
+                </div>
+                <iframe class="spotify" src="https://open.spotify.com/embed?uri=spotify:album:6KyI7O6eOgJgiA9Tbg6dEY" width="100%" height="300"
+                    frameborder="0" allowtransparency="true"></iframe>
+            </div>
+            <div class="form-group col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                <button class="btn btn-success btn-spotify btn-block">Listen on Spotify</button>
+            </div>
+            <!-- Comment Section -->
+            <div class="form-group col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="2" id="comment"></textarea>
+            </div>
+            <!-- Comments -->
+            <div name="comment-box" class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                <button class="btn btn-success btn-block btn-comment">Add Comment</button>
+                <h2>Comments:</h2>
+                <div id="thecomment"></div>
+            </div>
+            <!-- Official Website Link -->
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-23">
+                <h2><a href="http://www.loscampesinos.com" target="_blank">Official Website</a></h2>
             </div>
         </div>
     </div>
 
     <script type="text/javascript" src="./index.js"></script>
 
-    <!-- <h1>Los Campesinos!</h1>
-    <img src="./images/DOOMED.jpg" class="mainimage" />
-    <h2>Bio</h2>
-    <p>Los Campesinos! are a seven piece indie pop band from Cardiff, Wales, formed in early 2006 at Cardiff University. Though
-        the band formed in Wales, none of the members are Welsh. The band has gone through several lineup changes during
-        their career, with their current lineup consisting of Gareth Campesinos! (lead vocals, lyrics), Neil Campesinos!
-        (guitar), Tom Campesinos! (guitar), Rob Campesinos! (guitar, other instruments), Kim Campesinos! (keyboards, vocals),
-        Matt Campesinos! (bass) and Jason Campesinos! (drums). Gareth, Neil and Tom are the only remaining original members
-        still in the band.</p>
-    <div class="albums">
-        <img src="./images/hellosadness.jpg" alt="Hello Sadness" class="album" />
-        <img src="./images/noblues.jpg" alt="No Blues" class="album" />
-        <img src="./images/sickscenes.jpg" alt="Sick Scenes" class="album" />
-        <img src="./images/rib.jpg" alt="Romance Is Boring" class="album hidden">
-        <img src="./images/wabwad.jpg" alt="We Are Beautiful We Are Doomed" class="album hidden">
-        <img src="./images/hony.jpg" alt="Hold On Now Youngster" class="album hidden">
-        <button id="morebutton">More</button>
-    </div>
-    <br/>
-    <h1><a href="http://www.loscampesinos.com/" target="_blank">Official Website</a></h1 -->
 </body>
 
 </html>
