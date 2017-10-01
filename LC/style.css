@@ -1,68 +1,90 @@
-.col-centered{
-    float: none;
-    margin: 0 auto;
+/* Tried to keep CSS alphabetically organized and in order */
+/* Generic Classes */
+/* Extra CSS 1 - Linear Gradient background colours */
+body{
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, red, pink);
+    /* background: red; */
+    color: #141414;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.25em; 
 }
 h1, h2{
     text-align: center;
     font-family: 'Homemade Apple', cursive;
-    
+    color: white;    
 }
 h1:hover{
     color: black;
     filter: invert(100%);
 }
-body {
-    background: #F34165;
-    color: #628A61;
-}
 img{
     width: 100%;
+    border-radius: 25px;
+    margin: 10px auto;
 }
-/*Old formatting*/
+img.mainimage{
+    border: 5px groove gold;
+}
+/* IDs - Looks like I have none */
 
-
-/*
-background: linear-gradient(pink, #F34165);
-img.mainimage {
-    border: 3px solid gold;
-    width: 33%;
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto 
+/* Classes */
+/* White backgrounds for DIVs */
+.bg-white {
+    background-color: #ffffff;
 }
-img.mainimage:hover{
-    filter: url(filters.svg#grayscale);
-    filter: gray;
-    -webkit-filter: grayscale(1);
-    
+/* Formatting for bio section */
+.bio-main
+{
+    border: 2px solid gold;
 }
-img.album {
-    max-height: 200px;
-    width: auto;
-    border: 3px solid #FF0055;
+.col-centered{
+    float: none;
+    margin: 0 auto;
 }
-img.album:hover{
-    filter: invert(100%);
-    transform: rotate(20deg);
-}
-.albums{
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto 
-}
-#morebutton {
-    background-color:
-    border: none;
+/* Overlay Styling for album section */
+/* Extra CSS 2*/
+.container-overlay {
+    position: relative;
+    width: 100%;
+  }
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #E08B9A;
+    border-radius: 25px;
+  }
+  .overlay-text {
     color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-    margin-left: auto;
-    margin-right: auto;
-} 
-*/
-
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .container-overlay:hover .overlay {
+    opacity: .75;
+  }
+  /* Media Queries */
+  @media only screen and (max-width: 500px) {
+    body {
+        font-family: Arial;
+        font-size: 2em;
+        color: #380404;
+    }}
+    @media only screen and (max-width: 700px) and (min-width: 501px) {
+        body {
+            font-family: 'Homemade Apple', cursive;;
+            font-size: 2.25em;
+            color: #C41659;
+        }
+    }
+        
