@@ -1,8 +1,13 @@
+
+
+    /* <!--to navigate the dumb amount of stuff i did:   --> */
+    /* <!--  search for " HERE " on each page to jump to required features--> */
 /* Base Elements */
 html {
     font-size:14px;
 }
 body {
+    /* HERE */
     font-family: 'Encone Sans Expanded', sans-serif;
     background-color: rgb(180, 180,210);
     margin:0;
@@ -30,10 +35,12 @@ h5 {
 }
 
 p{
+    /* i also used vh for font sizes */
     text-align:justify;
     font-size:1.5vh;
 }
 
+/* HERE (border, image scaling to container) */
 img { 
     margin-left:5%;
     vertical-align: top;
@@ -85,6 +92,7 @@ nav {
     background-color: lightslategray;
 }
 
+/* HERE (background/text) */
 .theme-color {
     background-color:lightslategray;
     color: rgb(250,180,0) !important;
@@ -329,12 +337,16 @@ hr {
     content:url("http://www.robf.com.au/wp-content/uploads/2012/03/Miracle+Of+Sound+210016_115631271850723_1070278.jpg")
 }
 
+/* HERE (700 px changes) */
+
 @media (max-width:700px){
 
     body {
         font-size:0.8rem;
         color:slategray;
     }
+
+/*  HERE (font scaling) */
 
     p {
         font-size:0.6rem;
@@ -344,6 +356,8 @@ hr {
 
     }
 }
+
+/* HERE (700px changes) */
 
 @media (max-width:500px){
 
@@ -355,6 +369,10 @@ hr {
         margin:0 auto 1vh auto;
         padding:2%;
         float:none;
+    }
+
+    body {
+        color:darkslategray;
     }
 
     p{

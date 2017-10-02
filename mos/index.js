@@ -1,3 +1,7 @@
+
+
+    // to navigate the dumb amount of stuff i did:   -->
+    //   search for " HERE " on each page to jump to required features-->
 //////////////////////
 //TAB variables
 //////////////////////
@@ -42,23 +46,8 @@ var num_i=1;
 /////////////////
 /////////////////
 
-/////////////////
-///Image Hover
-/////////////////
-var img_gav = $("#gav");
-var boo_intensifies=false;
-img_gav.on("mouseenter",function(){
-    boo_intensifies=true;
-});
 
-img_gav.mouseout(function(){boo_intensifies=false})
-setInterval(function(){
-    if(boo_intensifies){
-        var dx=Math.floor(Math.random()*20);
-        var dy=Math.floor(Math.sqrt(20^2 - dx^2))-10;
-        img_gav.animate({top:dy+"px", left:dx+"px"},20);
-    }
-},40)
+
 
 function start(){
     tabs = $(".right");
@@ -74,6 +63,24 @@ function reset(){
     name=$(tabs[(tabShown+1)%tabs.length]).attr("name");
     $("#next-name").text(name);
 }
+
+/////// HERE (animation on mouseover)/////////
+///Image Hover
+///////////////////////////////////////////
+var img_gav = $("#gav");
+var boo_intensifies=false;
+img_gav.on("mouseenter",function(){
+    boo_intensifies=true;
+});
+
+img_gav.mouseout(function(){boo_intensifies=false})
+setInterval(function(){
+    if(boo_intensifies){
+        var dx=Math.floor(Math.random()*20);
+        var dy=Math.floor(Math.sqrt(20^2 - dx^2))-10;
+        img_gav.animate({top:dy+"px", left:dx+"px"},20);
+    }
+},40)
 
 //////////////////////
 //TAB control
@@ -95,9 +102,9 @@ btn_tab.click(function(){
 
 });
 
-//////////////////////////
+//////// HERE (element scaling with bootstrap) //////////////////
 ///Grid Mode
-//////////////////////////
+///////////////////////////////////////////////////////////////
 function grid(){
 
     var bios = $(".bio");
@@ -133,7 +140,7 @@ btn_gridView.click(function(){
     grid();
 });
 
-//////////////////////
+///////// HERE (2 commented blocks)/////////
 //COMMENT events and functions
 //////////////////////
 txa_newComment.keyup(function(){
