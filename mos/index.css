@@ -150,9 +150,10 @@ nav {
 }
 
 #photo-albums ul {
-    margin-left:5%;
+    margin-left:3%;
     margin-top:5px;
     padding-bottom:10px;
+    font-size:1.2vw;
 }
 
 /* Main Columns */
