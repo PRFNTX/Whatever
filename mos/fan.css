@@ -1,13 +1,7 @@
-#bar-mos {
-    background-color:red;
-    height:20vh;
+img {
+    width:100%;
 }
 
- #bar-auth {
-     background-color:blue;
-    height:20vh;
- }
-
- .row div {
-     transition: width 0.5s, margin 0.5s;
- }
+.row div {
+    margin-top:2vh;
+}

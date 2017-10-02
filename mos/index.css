@@ -38,8 +38,14 @@ img {
     margin-left:5%;
     vertical-align: top;
     width:40%;
+    border:2px solid lightslategray;
+    border-radius:5px;
+    padding: 1%;
 }
 
+.buffer-t20 {
+    margin-top:20vh;
+}
 
 .right a, .left a {
     display:block;
@@ -51,20 +57,40 @@ img {
 
 /* independant classes */
 
+.grid{
+    margin:0 auto;
+}
+
+.grid-view {
+    position:fixed;
+    left:42.5vw;
+    width:50px;
+    bottom:1vh;
+    text-align: center;
+}
+
+
 .tab {
     margin-left:5vw;
 }
-
+/* Bootstrap override */
 .form-group {
     max-width:40vw;
 }
 
+nav {
+    margin-bottom:16vh;
+}
 #navbarNavDropdown {
     background-color: lightslategray;
 }
 
 .theme-color {
     background-color:lightslategray;
+    color: rgb(250,180,0) !important;
+}
+
+.theme-text {
     color: rgb(250,180,0) !important;
 }
 
@@ -81,6 +107,7 @@ img {
     vertical-align: bottom;
 }
 
+/* Misc */
 .header {
     position:fixed;
     top:6vh;
@@ -109,6 +136,7 @@ img {
 
 #photo-albums img, #photo-albums ul,#photo-albums h3,#photo-albums div  {
     display:inline-block;
+    position:relative;
     margin-top:10px;
     width:45%;
 }
@@ -123,7 +151,6 @@ img {
 .left {
     position:fixed;
     width:45%;
-    margin-top:20vh;
     margin-left:0px;
     overflow: auto;
     padding: 1.5%;
@@ -134,7 +161,6 @@ img {
 
 .right {
     width:50%;
-    margin-top:20vh;
     overflow:auto;
     position:relative;
     float:right;
@@ -151,6 +177,15 @@ img {
     right:0;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
     cursor: pointer;
+    font-size:2rem;
+    z-index: 2;
+}
+
+.button-icon {
+    background-color: rgba(120,120,130,0.3);
+    border:1px solid rgba(200,200,200,0.6); 
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+    cursor: pointer; 
     font-size:2rem;
     z-index: 2;
 }
@@ -174,19 +209,6 @@ hr {
     margin:10px 5% 10px 10%;
 }
 
-/* ==> overlay removed
-.album .overlay {
-    width:95%;
-    background-image: url("https://f4.bcbits.com/img/a2557722580_10.jpg");
-    background-size: cover;
-    
-}
-
-.album:hover .overlay {
-    width:100px;
-    float:left;
-    transition:height 0.5s , width 0.5s ;
-}*/
 
 .album {
     margin:0 auto;
@@ -289,6 +311,10 @@ hr {
 
 
 /* js classes */
+/* other classes: main, and columns */
+.grid-item {
+    padding:2vh;
+}
 
 .comment-item {
     margin:5vh;
@@ -299,6 +325,26 @@ hr {
 
 }
 
+#gav:hover {
+    content:url("http://www.robf.com.au/wp-content/uploads/2012/03/Miracle+Of+Sound+210016_115631271850723_1070278.jpg")
+}
+
+@media (max-width:700px){
+
+    body {
+        font-size:0.8rem;
+        color:slategray;
+    }
+
+    p {
+        font-size:0.6rem;
+    }
+    .text {
+        columns:30;
+
+    }
+}
+
 @media (max-width:500px){
 
     .right {
@@ -306,9 +352,13 @@ hr {
         display:inline-block;
         overflow:auto;
         position:unset;
-        margin:150px auto 1vh auto;
+        margin:0 auto 1vh auto;
         padding:2%;
         float:none;
+    }
+
+    p{
+        font-size:1.5vh;
     }
 
     .text {
@@ -328,16 +378,8 @@ hr {
     .form-group {
         max-width:80vw;
     }
-}
 
-@media (max-width:700px){
-
-    html {
-        font-size:12px;
-    }
-
-    .text {
-        columns:30;
-
+    .grid-view {
+        left:1vw;
     }
 }
