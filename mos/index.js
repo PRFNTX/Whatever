@@ -313,17 +313,17 @@ var listItems=[];
 //////////////////////
 btn_bio.click(function(event){
     event.preventDefault();
-    name=scrub($("#bio-name").val());
+    name=$("#bio-name").val();
     if(name==="Kurt Gödel"){
         alert("plz, no...")
         } else {
         for (var p=0;p<num_p;p++){
-            bio.push(scrub($("#bio"+p).val()));
+            bio.push($("#bio"+p).val());
         }
-        img=scrub($("#bio-image").val());
-        listTitle=scrub($("#bio-list-name").val());
+        img=$("#bio-image").val();
+        listTitle=$("#bio-list-name").val();
         for (var i=0;i<num_i;i++){
-            listItems.push(scrub($("#bio-item"+i).val()));
+            listItems.push($("#bio-item"+i).val());
         }
         spawnBio();
     }
