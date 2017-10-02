@@ -1,9 +1,5 @@
 
-/* ec9f32 orange */
-/* mos yellow f6c706 */
-/* mos dark 232324 */
-/* 444445 lighter*/
-/* 020202 almost black */
+
     /* <!--to navigate the dumb amount of stuff i did:   --> */
     /* <!--  search for " HERE " on each page to jump to required features--> */
 /* Base Elements */
@@ -13,8 +9,7 @@ html {
 body {
     /* HERE */
     font-family: 'Encone Sans Expanded', sans-serif;
-    /* background-color: rgb(180, 180,210); */
-    background-color:lightslategrey;
+    background-color: rgb(180, 180,210);
     margin:0;
 }
 
@@ -94,21 +89,22 @@ nav {
     margin-bottom:16vh;
 }
 #navbarNavDropdown {
-    background-color: black;
+    background-color: lightslategray;
 }
 
 /* HERE (background/text) */
 .theme-color {
-    background-color:black;
-    color: #f6c706 !important;
+    background-color:lightslategray;
+    color: rgb(250,180,0) !important;
 }
 
 .theme-text {
-    color: #f6c706 !important;
+    color: rgb(250,180,0) !important;
 }
 
 .navbar-toggler-icon {
-    color: #f6c706 !important;
+
+    color: rgb(250,180,0)  !important;
     font-size:4vh;
     vertical-align: middle;
 }
@@ -126,18 +122,17 @@ nav {
     width:100%;
     height:14vh;
     text-align: center;
-    background:linear-gradient(0,lightslategrey,black);
-    color: #f6c706;
+    background-color:linear-gradient(0,black,black,lightslategray);
+    color: rgb(250,180,0);
     font-family: 'Unlock', cursive;
     z-index: 1;
-    border-bottom: 2px solid #ec9f32;
 }
 
 .box-text {
     background-color:rgba(0,0,0,0.25);
     border-radius:10px;
     padding: 5px 10px;
-    border: 2px solid #ec9f32;
+    border: 2px solid white;
     color: rgb(220,240,220);
     box-shadow:5px 4px 6px rgba(0,0,0,0.3);
 }
@@ -155,10 +150,9 @@ nav {
 }
 
 #photo-albums ul {
-    margin-left:3%;
+    margin-left:5%;
     margin-top:5px;
     padding-bottom:10px;
-    font-size:1.2vw;
 }
 
 /* Main Columns */
