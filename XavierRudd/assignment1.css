@@ -1,95 +1,95 @@
-.albums {
-    box-sizing: border-box;
+.studioalbums {
+    text-align: center;
+    list-style: none;    
+}
+
+.image {
+    margin: 1em;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about {
     display: inline-block;
-    
-    
+}
+
+.rema {
+    width: 20em;
+    height: 20em;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+.box-text {
+    margin: 0 5em;
+    text-align: left;
+    line-height: 1.8em;
 }
 
 .pic {
-        /* width: 30%;
-        height: 30%; */
-        /* margin: auto; */
-        /* float: left; */
-        max-width: 70%;
-       
-    }
+    max-width: 70%; 
+}
+
 .imageContainer {
     text-align: center;
-}
-.navItems {
-   list-style-type: none;
-   background-color: grey;
-   margin: -10px;
-   width: 100%;
-   height: 20vh;
-}
-li {
     display: inline-block;
-    margin: 5%;
-    text-align: center;
-    color: white;
+}
+
+.imageContainer img:last-child {
+    display: none;
 }
 
 .interests {
     display: inline-block;
-    margin: 5%;
     text-align: center;
     color: black;
+    width: 14%;
 }
 
-.nav {
-    position: fixed;
-    width: 100vw;
+.listclass {
     text-align: center;
-    top: 0px;
-    height: 10px;
-    
-   
-    
 }
 
 body {
-    font-family: avenir;
-    /* background-image: url('background.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat; */
-    
+    font-family: 'Lato', sans-serif;
+    background-color: floralwhite;    
 }
 
 .intro {
-    margin-top: 20vh;
-    /* background-image: url("xavierRudd.jpg"); */
+    margin-top: 10vh;
+    margin-bottom: 1em;
+}
+
+h5 {
+    text-align: center;
 }
 
 .image {
     display: inline-block;
     width: 150px;
     height: 150px;
-
-
 }
 
-.title a:visited {
-    color: white;
-}
-.title a:link {
-    text-decoration: none;
-}
-.title a:hover {
-    font-weight: bold;
-    
+h2 {
+    margin: 1em;
+    text-align: center;
+    color: #454343;
 }
 
-.title a:active {
-    font-weight: bold;
-    color: black;
+.gallery {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    margin: 1em;
 }
-
 
 .filler {
     display: block;
-    height: 20vh; /*same height as header*/
-    margin-top: -20vh; /*same height as header*/
+    height: 5vh; /*same height as header*/
+    margin-top: -5vh; /*same height as header*/
     visibility: hidden;
 }
 
@@ -97,11 +97,108 @@ footer {
     display: block;
 }
 
-.bottomDiv {
-    height: 100px;
-}
-
 h1, h2 {
     text-align: center;
     color: #454343;
+}
+
+.website {
+    text-align: center;
+}
+
+.travel {
+    margin: .5em;
+}
+
+p {    
+    color: #454343;
+} 
+
+.borders {
+    border: .5em solid #212529;
+}
+.comments   {
+    margin: 1em auto;
+    text-align: center;
+}
+
+.button {
+    background-color: #212529; 
+    border: none;
+    color: white;
+    padding: .5em 1em; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .8em;
+}
+ 
+.bottom-margin {
+    margin-bottom: 15em;
+} 
+.website a {
+    color: black;
+    text-decoration: underline;
+}
+
+.website  a:visited {
+    color: black;
+    text-decoration: underline;
+}
+.website a:hover {
+    font-weight: bold;
+}
+.website a:active {
+    font-weight: bold;
+    color: black;
+}
+
+#comment-holder {
+    margin: 0 auto;
+    text-align: left;
+    max-width: 50%;
+    border: .2em solid #212529;
+    padding: .5em;
+    background-color: white;
+}
+
+#overlay {
+  background:rgba(0,0,0,.6);
+   width:100%;
+  height:100%; 
+  position:fixed;
+  top:0;
+  left:0;
+  display:none;
+  text-align:center;
+}
+
+#overlay img {
+  margin-top: 10%;
+  width: 50%;
+  height: 50%;
+  
+}
+ .hover {
+    opacity: .5;
+}
+
+@media screen and (max-width: 700px){
+   h1, h2 { font-size: 3em;
+        color: darkslateblue; 
+   }
+    p {
+        font-size: 1em;
+        color: darkslateblue;
+    }
+}
+
+@media screen and (max-width: 500px){
+      h1, h2 { font-size: 1.5em;
+        color: slategray; 
+   }
+    p {
+        font-size: .9em;
+        color: slategray;
+    }
 }

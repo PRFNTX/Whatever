@@ -1,11 +1,17 @@
 body{
-    background-color: pink;
+    background-color: darkslategrey;
+    
 }
 h1, h2{
     text-align: center;
-    color: white;    
+    color: #f9f9f9;    
 }
 img{
     width: 100%;
+    max-height: 300px;
     border-radius: 25px;
+}
+
+.center {
+    margin-top: 20vh;
 }

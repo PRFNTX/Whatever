@@ -1,82 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Xavier Rudd</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">        
     <link rel="stylesheet" type="text/css" href="assignment1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous">
+
+        </script>
 </head>
+
 <body>
-    <div class="nav">
-    <ul class="navItems">
-        <li class="title"><a href="assignment1.html">Xavier Rudd</a></li>
-        <li class="title"><a href="#biography">Biography</a></li>
-        <li class="title"><a href="#albums">Albums</a></li>
-        <li class="title"><a href="#officialSite">Official Site</a></li>
-        <li class="title"><a href="author.html" target="_blank">Author</a></li>
-        <li class="title"><a href="extracontent.html" target="_blank">Content of my choice</a></li>
-    </ul>
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="assignment1.html">Xavier Rudd</a>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="nav-content">
+                <ul class="navbar-nav">
+                    <li class="nav-item nav-item active">
+                        <a class="nav-link" href="#biography">Biography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#albums">Albums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#officialSite">Official Site</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="author.html" target="">Author</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="extracontent.html" target="">Image Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <h1 class="intro">Xavier Rudd</h1>
+        <div class="row">
+            <div class="imageContainer">
+                <img src="img/xv21.jpg" class="pic borders">
+                <img src="img/xavierRudd2.jpg" class="pic borders">
+            </div>
+        </div>
+
+
+        <span class="filler" id="biography"></span>
+
+        <h2>Biography</h2>
+        <div class="row">
+            <div class="col-lg-6 col-xs-12">
+                <p>
+                    Xavier Rudd (born 29 May 1978) is an Australian singer-songwriter and multi-instrumentalist. Several of Rudd's songs incorporate
+                    socially conscious themes, such as spirituality, humanity, environmentalism and the rights of Aboriginal
+                    peoples.<br>
+                    Rudd has become a known name at music festivals worldwide including the Bonnaroo Music Festival, the High Sierra and Wakarusa, moe.down, Summer Sonic, Lowlands, Rock Werchter among others. He has toured with artists including Jack Johnson, Dave Matthews, Ben Harper, Good Old War, G. Love and Special Sauce, and Rodrigo y Gabriela.<br> Before launching his solo career Rudd began playing music as part of the band 'Xavier and the Hum'. He drew inspiration from artists such as Leo Kottke, Ben Harper, Natalie Merchant and multi-instrumentalist David Lindley, as well as music from diverse sources, such as Hawaiian and Native American music. His music first took him overseas when he traveled to Whistler, British Columbia—Rudd was in a band and would play each night after a day of snowboarding.
+
+
+
+                </p>
+            </div>
+            <div class="col-lg-6 col-xs-12">
+                <p>
+                    Xavier Rudd grew up in Jan Juc, near Torquay, Victoria. He attended St Joseph's College, Geelong. His maternal grandfather
+                    was Dutch, born in Tilburg, a town in the Netherlands, before migrating to Australia. <br>One of his grandmothers
+                    was from an Irish potato-growing family and grew up in Colac, Victoria. His father was born with Aboriginal,
+                    Irish and Scottish heritage, and Rudd has Wurundjeri background, one of his great grandmothers
+                    was an Aboriginal Australian, and her child (Rudd's paternal grandmother) was taken away from her.<br>
+                    Rudd showed a keen interest in music growing up in a family of seven children. While primary school-aged,
+                    Rudd used his mother's vacuum cleaner as a makeshift didgeridoo and he began playing his brother's guitar.<br>
+                    He also played saxophone and clarinet as a child. Rudd's brother can still play guitar, but went
+                    on to become an accountant in Orlando, Florida. As a child, Xavier Rudd sold recycled wood through
+                    his own furniture business.[14] Immediately after finishing school, Rudd traveled to Fiji. He lived in
+                    villages around the country for nine months, returning to Australia at age 19.
+                </p>
+            </div>
+        </div>
+        <span class="filler" id="albums"></span>
+
+        <h2>Studio Albums</h2>
+
+        <div class="row margins studio albums">
+            <div class="col-lg-3 col-sm-4 col-6" id="margin-fix">
+                <a href="https://www.youtube.com/embed/ex0YaCVVK" target="_blank" class="albums">
+                    <img src="img/toLet.jpeg " class="image borders"></a>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-6 img" id="margin-fix">
+                <a href="https://www.youtube.com/watch?v=JCilLq_TY7g" target="_blank" class="albums">
+                    <img src="img/solace.jpg" class="image borders"></a>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-6 img" id="margin-fix">
+                <a href="https://www.youtube.com/watch?v=OtC7cqMp6Fk" target="_blank" class="albums">
+                    <img src="img/foodInTheBelly.jpg"class="image borders"></a>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-6 img" id="margin-fix">
+                <a href="https://www.youtube.com/watch?v=hriS3mIo7jA" target="_blank" class="albums">
+                    <img src="img/whiteMoth.jpg"class="image borders"></a>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-6 img" id="margin-fix">
+                <a href="https://www.youtube.com/embed/5Iug6A9qdQU" target="_blank" class="albums" class="image">
+                    <img src="img/darkShades.jpg" class="image borders"></a>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-6 img" id="margin-fix">
+                <a href="https://www.youtube.com/watch?v=Bc4x4r0rmko" target="_blank" class="albums">
+                    <img src="img/koonyum.jpeg"class="image borders"></a>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-6 img" id="margin-fix">
+                <a href="https://www.youtube.com/watch?v=1BRN3cqbhmA" target="_blank" class="albums">
+                    <img src="img/spiritBird.jpg" class="image borders"></a>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-6 img" id="margin-fix">
+                <a href="https://www.youtube.com/watch?v=qSP2J1M7RdI" target="_blank" class="albums">
+                    <img src="img/nanna.jpg" class="image"></a>
+            </div>
+        </div>
+
+
+        <span class="filler" id="officialSite"></span>
+        <h2>Website</h2>
+        <p class="website">Check out Xavier Rudd's <a href="http://www.xavierrudd.com/" target="_blank">Official Website</a> for more information
+            and Tour Dates!</p>
+
+        <div class="row comments">
+            <div class="col-lg-12 col-12">
+                <form action="javascript:void('');" id="comment-form">
+                <input type="text" value="" id="input-field">
+                <input type="submit" value="submit" class="button">
+                </form>
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col-lg-12 col-12">
+
+            <div  id="comment-holder">
+              <h4>Comments</h4>
+            </div>
+            </div>
+        </div>
+        <div class="bottom-margin"></div>
+
+        <footer>
+        </footer>
     </div>
-    <h1 class="intro">Xavier Rudd</h1>
-    <!-- <figure src="xavierRudd2.jpg" class="pic"></figure> -->
-   <div class="imageContainer"> 
-       <img src="xavierRudd2.jpg" class="pic">
-    </div>
-    <span class="filler" id="biography"></span>
-    <h2>Biography</h2>
-    <p>
-        Xavier Rudd (born 29 May 1978) is an Australian singer-songwriter and multi-instrumentalist. Several of Rudd's songs incorporate socially conscious themes, such as spirituality, humanity, environmentalism and the rights of Aboriginal peoples.
 
-    </p>
-    <p>
-            Xavier Rudd grew up in Jan Juc,[1] near Torquay, Victoria.[2] He attended St Joseph's College, Geelong.[3] His maternal grandfather was Dutch, born in Tilburg, a town in the Netherlands, before migrating to Australia.[4] One of his grandmothers was from an Irish potato-growing family and grew up in Colac, Victoria.[5] His father was born with Aboriginal, Irish and Scottish heritage,[2][6] and Rudd has Wurundjeri background,[7] one of his great grandmothers was an Aboriginal Australian, and her child (Rudd's paternal grandmother) was taken away from her.[8]
-            
-            Rudd showed a keen interest in music growing up in a family of seven children.[9][10] While primary school-aged, Rudd used his mother's vacuum cleaner as a makeshift didgeridoo and he began playing his brother's guitar.[11] He also played saxophone and clarinet as a child.[12] Rudd's brother can still play guitar, but went on to become an accountant in Orlando, Florida.[13]
-            
-            As a child, Xavier Rudd sold recycled wood through his own furniture business.[14] Immediately after finishing school, Rudd traveled to Fiji. He lived in villages around the country for nine months, returning to Australia at age 19.[9]
-    </p>
-    <span class="filler" id="albums"></span>  
-  <h2>Studio Albums</h2>
-<ul>
-    
-    <li>
-        <a href="https://www.youtube.com/embed/ex0YaCVVK" target="_blank" class="albums"><img src="toLet.jpeg " class="image"></a>
-    </li>    
-    <li>
-        <a href="https://www.youtube.com/watch?v=JCilLq_TY7g" target="_blank" class="albums"><img src="solace.jpg" class="image"></a>
-    </li>  
-    <li>
-            <a href="https://www.youtube.com/watch?v=OtC7cqMp6Fk" target="_blank" class="albums"><img src="foodInTheBelly.jpg"class="image"></a>
-    </li> 
-    <li>
-            <a href="https://www.youtube.com/watch?v=hriS3mIo7jA" target="_blank" class="albums"><img src="whiteMoth.jpg"class="image"></a>
-    </li>   
-    <li>
-        <a href="https://www.youtube.com/embed/5Iug6A9qdQU" target="_blank" class="albums"class="image"><img src="darkShades.jpg" class="image"></a>
-    </li>
-     
-    <li>
-        <a href="https://www.youtube.com/watch?v=Bc4x4r0rmko" target="_blank" class="albums"><img src="koonyum.jpeg"class="image"></a>
-    </li>    
-       
-    <li>
-            <a href="https://www.youtube.com/watch?v=1BRN3cqbhmA" target="_blank" class="albums"><img src="spiritBird.jpg" class="image"></a>
-    </li>    
-    <li>
-        <a href="https://www.youtube.com/watch?v=qSP2J1M7RdI" target="_blank" class="albums"><img src="nanna.jpg" class="image"></a>
-    </li>    
-                
-</ul> 
-<span class="filler" id="officialSite"></span>  
-<h2>Website</h2>
-<p>Check out Xavier Rudd's <a href="http://www.xavierrudd.com/" target="_blank">Official Website</a> for more information and Tour Dates!</p>
-<div class="bottomDiv">
-
-</div>
-<footer>
-
-</footer>
-    
+    <script type="text/javascript" src="apps.js"></script>
 </body>
+
 </html>
