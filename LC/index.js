@@ -1,32 +1,34 @@
 // A $( document ).ready() block.
 $(document).ready(function () {
-    //your jquery method blocks here 
-    showAlbums();
-    imageChange();
-});
-//Hides albums on load
-$(function hideAlbums() {
-    $('.hidden').hide();
-});
-
-//Shows extra albums when the more button is clicked and hides the button
-function showAlbums() {
-
-    $("#morebutton").click(function () {
-        $('.hidden').show();
-        $('#morebutton').hide();
+    //Comment section
+    $(function appendComment() {
+        $('.btn-comment').click(function () {
+            var commentName = $("#usr").val();
+            var commentText = $("#comment").val();
+            $('#thecomment').append('<div class="bg-white col-xs-12 col-sm-12 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0">' + commentName + ' wrote: <br/> ' + commentText + '</div>');
+        })
     });
-}
-//Increases the size of the main image 5% and reduces it back to normal in the same animation
-function imageChange() {
-    $('.mainimage').hover(function () {
+    //Extra Function 1 - Hides all spotify iframes on load
+    $(function hideSpotify() {
+        $('.spotify').hide();
+    });
+    //Extra Function 2 - Loads all spotify iframes on button click
+    $(function showSpotify() {
+        $('.btn-spotify').click(function () {
+            $('.spotify').toggle('slow');
+        })
+    });
+    
+    //Main Image Hover - Main image changes image slightly when hovered over
+    $(".mainimage").hover(function () {
+        console.log('hovered');
         $('.mainimage').animate({
-            height: '+=5%',
-            width: '+=5%'
+            width: '-=5px',
+            height: '-=5px'
         }, 'slow');
         $('.mainimage').animate({
-            height: '-=5%',
-            width: '-=5%'
-        }, 'slow');    
+            width: '+=5px',
+            height: '+=5px'
+        }, 'slow');
     });
-};
+});
